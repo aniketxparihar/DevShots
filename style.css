@@ -1,0 +1,28 @@
+body{
+    width:100%;
+}
+
+#login{
+    padding:1rem 4rem;
+}
+.fa{
+    font-size: 2rem;
+}
+.nav__wrapper{
+    box-shadow: -0px 0px 20px 6px rgba(0, 0, 0, 0.4);
+}
+.card__wrapper{
+    overflow: hidden;
+    width:30rem;
+     box-shadow: -0px 0px 20px 6px rgba(0, 0, 0, 0.4),-7px 7px 0 var(--dark-blue-600),-14px 14px 0 var(--dark-blue-800);
+}
+.card__heading{
+    text-align: start;
+}
+.card__header{
+    height:max-content;
+    margin-bottom:0rem;
+}
+.card__headings{
+    height:max-content;
+}
