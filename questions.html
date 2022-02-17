@@ -7,38 +7,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://atomui.netlify.app/css/component.css">
     <link rel="stylesheet" href="questions.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Document</title>
 </head>
 
-<body class="flex  align-center width-full bg-main-black">
-    
-        <div class="nav__wrapper bg-main-black ">
-            <div class="nav__left">
-            </div>
-            <div class="nav__right flex align-center ">
-                <i class="fa fa-github txt-main-white h2 m-4 pointer"></i>
-                <i class="fa fa-twitter txt-light-blue-400 h2 m-4 pointer"></i>
-                <button id="login" class="button txt-2xl txt-bold bg--primary rounded-m m-4">Login</button>
+<body class="flex  align-center width-full bg-main-white">
+
+    <div class="nav__wrapper ">
+        <div class="nav__left">
+            <div class="timer h5 p-4 txt-gray-800"><i class="material-icons txt-green-400">timer</i>: <span
+                    class="counter txt-gray-500">3 min 25 seconds</span></div>
+        </div>
+        <div class="nav__right flex align-center ">
+            <button onclick="modalOpen()" id="exit"
+                class="button  txt-2xl txt-bold bg-red-500 rounded-m m-4">Exit</button>
+        </div>
+    </div>
+    <main class="flex flex-col justify-center align-center width-full">
+        <div class="tracker width-full"></div>
+        <div class="h3 txt-gray-500 m-8">Topic 1</div>
+        <div id="questionNoAndScore" class="flex p-4 ">
+            <div class="h5 txt-yellow-400 ">Question <span class="current__question txt-gray-500 ">1/5</span></div>
+            <div id="score" class="h5 txt-violet-400">Score <span class="score txt-gray-500">0</span></div>
+        </div>
+        <div id="question" class="h5 txt-gray-600 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio
+            ab minus deleniti, voluptate nemo quae?</div>
+        <div id="answer" class="txt-3xl rounded-3xl  flex justify-center align-center  txt-gray-400">Lorem</div>
+        <div id="answer" class="txt-3xl rounded-3xl  flex justify-center align-center  txt-gray-400">Ipsum</div>
+        <div id="answer" class="txt-3xl rounded-3xl  flex justify-center align-center  txt-gray-400">Dolor</div>
+        <div id="prevAndNext" class="flex p-4 ">
+            <div id="prev" class=" txt-3xl txt-bold txt-light-blue-400 pointer rounded-m m-4">Prev</div>
+            <div id="next" class=" txt-3xl txt-bold txt-light-blue-400 pointer rounded-m m-4">Next</div>
+        </div>
+    </main>
+    <div class="modal__screen ">
+        <div class="modal__box flex justify-center align-center">
+            <div class="modal bg-main-black relative">
+
+                <div class="h5 m-4 txt-main-white">Do you want to leave the quiz in between?</div>
+                <div class="yesOrNo width-full flex justify-end">
+                    <button id="yes" class="button txt-2xl txt-bold  rounded-m m-4">Yes</button>
+                    <button onclick="modalClose()" id="no"
+                        class="button txt-2xl txt-bold bg-dark-blue-200 rounded-m m-4">No</button>
+
                 </div>
+            </div>
         </div>
-        <main class="flex flex-col justify-center align-center width-full">
-            <div class="h1 txt-gray-200 m-8">Topic 1</div>
-        <div id="questionNoAndScore"class="flex p-4 width-half">
-            <div class="h5 txt-gray-400">Question: 1/5</div>
-            <div id="score" class="h5 txt-gray-400">Score: 0</div>
-        </div>
-        <div id="question" class="h6 txt-gray-200 width-half">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ab minus deleniti, voluptate nemo quae?</div>
-        <div id="answer" class="txt-3xl rounded-3xl bg-gray-700 width-half flex justify-center align-center  txt-gray-200">Lorem</div>
-        <div id="answer" class="txt-3xl rounded-3xl bg-gray-700 width-half flex justify-center align-center  txt-gray-200">Ipsum</div>
-        <div id="answer" class="txt-3xl rounded-3xl bg-gray-700 width-half flex justify-center align-center  txt-gray-200">Dolor</div>
-        </main>
-        
-      
-    <script src="https://kit.fontawesome.com/f0348b8dc4.js" crossorigin="anonymous"></script>
+        <script>
+            const modalScreen = document.querySelector(".modal__screen");
+            const modalOpen = () => {
+                console.log("Hi")
+                modalScreen.style.display = "block";
+
+            }
+
+            const modalClose = () => {
+                modalScreen.style.display = "none";
+
+            }
+        </script>
+        <script src="https://atomui.netlify.app/"></script>
+        <script src="https://kit.fontawesome.com/f0348b8dc4.js" crossorigin="anonymous"></script>
 
 </body>
 
 </html>
-
-
-
