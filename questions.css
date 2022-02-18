@@ -37,7 +37,16 @@ button {
 #answer,
 #prevAndNext {
   margin-bottom: 4rem;
-  width: 50%;
+  width: 60%;
+}
+@media screen and (max-width: 600px) {
+  #questionNoAndScore,
+#question,
+#answer,
+#prevAndNext {
+  margin-bottom: 4rem;
+  width: 90%;
+}
 }
 #question {
   text-align: left;
@@ -51,19 +60,13 @@ button {
 #answer:active,
 #answer:focus {
   animation-name: click;
-  animation-duration: 0.29s;
+  animation-duration: 0.2s;
 }
 @keyframes click {
   0% {
     background-color: var(--gray-200);
   }
-  25% {
-    background-color: var(--violet-200);
-  }
   50% {
-    background-color: var(--gray-200);
-  }
-  75% {
     background-color: var(--violet-200);
   }
   100% {
@@ -88,4 +91,13 @@ button {
 #yes,
 #no {
   padding: 1rem 4rem;
+}
+
+.true{
+  background-color: var(--success);
+  color:var(--main-black);
+}
+.false{
+  background-color: var(--danger);
+  color:var(--main-black);
 }
