@@ -151,3 +151,25 @@ img{
     align-items: center;
 }
 
+@media screen and (max-width: 700px) {
+  .quiz__card__container{
+   margin-left: 2rem;
+}
+.category__heading{
+     margin-left: 2rem;
+}
+input{
+    height:4rem;
+    width:10rem;
+    font-size: 1.5rem;
+    outline:none;
+    border-radius: 8px;
+    margin-left:4px;
+}
+}
+@media screen and (max-width: 400px) {
+  .quiz__card__container{
+   margin-left: 8rem;
+}
+
+}
