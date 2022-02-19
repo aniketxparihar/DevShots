@@ -10,60 +10,45 @@
     <title>Document</title>
 </head>
 
-<body class="flex  align-center width-full bg-main-black">
+<body class="flex align-center width-full ">
     
         <div class="nav__wrapper ">
             <div class="nav__left">
             </div>
             <div class="nav__right flex align-center ">
-                <i class="fa fa-github txt-main-white h2 m-4 pointer"></i>
-                <i class="fa fa-twitter txt-light-blue-400 h2 m-4 pointer"></i>
-                <button id="login" class="button txt-2xl txt-bold bg--primary rounded-m m-4">Login</button>
+                <button id="continue" class="button txt-2xl txt-bold bg--secondary rounded-m m-4">Continue</button>
                 </div>
         </div>
         <main class="flex flex-col justify-center align-center width-full">
             <div class="result__wrapper flex justify-center align-center flex-col rounded-2xl">
-                 <div class="h1 txt-gray-200 m-8">Result</div>
-                <div id="score" class="h5 txt-gray-400">Final Score: <span class="txt-yellow-400">10/50</span></div>
+                 <div class="h1 txt-gray-600 m-8">Result</div>
+                <div id="score" class="h5 txt-gray-400 m-8">Final Score: <span class="txt-yellow-400">10/50</span></div>
         
             </div>
-           
-            <div id="question__wrapper">
-        <div id="question" class="h6 txt-gray-200 width-half">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ab minus deleniti, voluptate nemo quae?</div>
-        <div id="answer" class="txt-3xl rounded-3xl bg-gray-700 width-half flex justify-center align-center  txt-gray-200 pointer">Lorem</div>
-        <div id="answer" class="wrong txt-3xl rounded-3xl bg-gray-700 width-half flex justify-center align-center  txt-gray-200 pointer">Ipsum</div>
-        <div id="answer" class="right txt-3xl rounded-3xl bg-gray-700 width-half flex justify-center align-center  txt-gray-200 pointer">Dolor</div>
+        <div class="question__wrapper m-8 flex flex-col justify-center align-center">
+            <div id="question" class="h5 txt-gray-600 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio
+            ab minus deleniti, voluptate nemo quae?</div>
+        
+        <div  id="answer" class="txt-3xl rounded-3xl  flex justify-center align-center  txt-gray-400 true">Lorem</div>
+        
+        <div  id="answer" class="txt-3xl rounded-3xl  flex justify-center align-center  txt-gray-400 false">Ipsum</div>
+       
+        <div  id="answer" class="txt-3xl rounded-3xl  flex justify-center align-center  txt-gray-400">Dolor</div>
+        
+        </div>
+        <div class="question__wrapper m-8 flex flex-col justify-center align-center">
+            <div id="question" class="h5 txt-gray-600 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio
+            ab minus deleniti, voluptate nemo quae?</div>
+        <input type="radio" name="answer" id="A">
+        <label for="A" id="answer" class="txt-3xl rounded-3xl  flex justify-center align-center  txt-gray-400 true">Lorem</label>
+        <input type="radio" name="answer" id="B">
+        <label for="B" id="answer" class="txt-3xl rounded-3xl  flex justify-center align-center  txt-gray-400 false">Ipsum</label>
+        <input type="radio" name="answer" id="C">
+        <label for="C" id="answer" class="txt-3xl rounded-3xl  flex justify-center align-center  txt-gray-400">Dolor</label>
+        
+        </div>
 
-            </div>
-             <div id="question__wrapper">
-        <div id="question" class="h6 txt-gray-200 width-half">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ab minus deleniti, voluptate nemo quae?</div>
-        <div id="answer" class=" right txt-3xl rounded-3xl bg-gray-700 width-half flex justify-center align-center  txt-gray-200 pointer">Lorem</div>
-        <div id="answer" class="txt-3xl rounded-3xl bg-gray-700 width-half flex justify-center align-center  txt-gray-200 pointer">Ipsum</div>
-        <div id="answer" class="txt-3xl rounded-3xl bg-gray-700 width-half flex justify-center align-center  txt-gray-200 pointer">Dolor</div>
-
-            </div>
-             <div id="question__wrapper">
-        <div id="question" class="h6 txt-gray-200 width-half">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ab minus deleniti, voluptate nemo quae?</div>
-        <div id="answer" class="right txt-3xl rounded-3xl bg-gray-700 width-half flex justify-center align-center  txt-gray-200 pointer">Lorem</div>
-        <div id="answer" class="wrong txt-3xl rounded-3xl bg-gray-700 width-half flex justify-center align-center  txt-gray-200 pointer">Ipsum</div>
-        <div id="answer" class="txt-3xl rounded-3xl bg-gray-700 width-half flex justify-center align-center  txt-gray-200 pointer">Dolor</div>
-
-            </div>
-             <div id="question__wrapper">
-        <div id="question" class="h6 txt-gray-200 width-half">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ab minus deleniti, voluptate nemo quae?</div>
-        <div id="answer" class="txt-3xl rounded-3xl bg-gray-700 width-half flex justify-center align-center  txt-gray-200 pointer">Lorem</div>
-        <div id="answer" class="txt-3xl rounded-3xl bg-gray-700 width-half flex justify-center align-center  txt-gray-200 pointer">Ipsum</div>
-        <div id="answer" class="txt-3xl rounded-3xl bg-gray-700 width-half flex justify-center align-center  txt-gray-200 pointer">Dolor</div>
-
-            </div>
-            <div id="question__wrapper">
-        <div id="question" class="h6 txt-gray-200 width-half">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ab minus deleniti, voluptate nemo quae?</div>
-        <div id="answer" class="txt-3xl rounded-3xl bg-gray-700 width-half flex justify-center align-center  txt-gray-200 pointer">Lorem</div>
-        <div id="answer" class="txt-3xl rounded-3xl bg-gray-700 width-half flex justify-center align-center  txt-gray-200 pointer">Ipsum</div>
-        <div id="answer" class="txt-3xl rounded-3xl bg-gray-700 width-half flex justify-center align-center  txt-gray-200 pointer">Dolor</div>
-
-            </div>
-            
+        
         
         </main>
         
