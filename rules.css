@@ -1,0 +1,66 @@
+* {
+  font-family: "Noto Sans";
+  box-sizing: border-box;
+}
+body {
+  width: max-content;
+}
+html {
+  font-size: 10px;
+}
+
+main {
+  margin-top: 0rem;
+}
+button {
+  min-width: fit-content;
+}
+
+/* Nav Components */
+.nav__wrapper {
+  backdrop-filter: blur(10px);
+}
+
+
+.rules{
+  margin-bottom: 4rem;
+  width: 50rem;
+  border: 1px solid var(--gray-200);
+  padding: 2rem;
+  border-radius: 4px;
+}
+.rules li{
+    font-size: 1.5rem;
+    color:var(--main-black);
+    margin:2rem;
+}
+@media screen and (max-width: 600px) {
+.rules {
+  margin-bottom: 4rem;
+  width: 30rem;
+}
+}
+
+
+.modal {
+  width: fit-content;
+  height: fit-content;
+  border-radius: 8px;
+}
+
+
+#exit,
+#yes,
+#no ,
+#start{
+  padding: 1rem 4rem;
+}
+
+.true{
+  background-color: var(--success);
+  color:var(--main-black);
+}
+.false{
+  background-color: var(--danger);
+  color:var(--main-black);
+}

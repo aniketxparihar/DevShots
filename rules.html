@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://atomui.netlify.app/css/component.css">
+    <link rel="stylesheet" href="rules.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body class="flex  align-center width-full bg-main-white">
+
+    <div class="nav__wrapper ">
+        <div class="nav__left">
+        </div>
+        <div class="nav__right flex align-center ">
+            <button onclick="modalOpen()" id="exit"
+                class="button  txt-2xl txt-bold bg-red-500 rounded-m m-4">Exit</button>
+        </div>
+    </div>
+    <main class="flex flex-col justify-center align-center width-full">
+        <div class="h3 txt-gray-800 m-8">Quiz Rules</div>
+        <ol class="rules">
+            <li>The quiz will contain 5 questions</li>
+            <li>You have to answer the questions within 30 sec</li>
+            <li>For every right answer you will gave 10 points</li>
+            <li>For every wrong answer you will lose 2 point</li>
+            <li>If all the questions answered correctly you will earn a badge</li>
+        </ol>
+        <button  id="start"
+                class="button  txt-2xl txt-bold bg-green-500 rounded-m m-4">Start</button>
+        
+    </main>
+    <div class="modal__screen ">
+        <div class="modal__box flex justify-center align-center">
+            <div class="modal bg-main-black relative">
+
+                <div class="h6 m-4 txt-main-white">Do you want to leave the quiz in between?</div>
+                <div class="yesOrNo width-full flex justify-end">
+                    <button id="yes" class="button txt-2xl txt-bold  rounded-m m-4">Yes</button>
+                    <button onclick="modalClose()" id="no"
+                        class="button txt-2xl txt-bold bg-dark-blue-200 rounded-m m-4">No</button>
+
+                </div>
+            </div>
+        </div>
+        <script>
+            const modalScreen = document.querySelector(".modal__screen");
+            const modalOpen = () => {
+                console.log("Hi")
+                modalScreen.style.display = "block";
+
+            }
+
+            const modalClose = () => {
+                modalScreen.style.display = "none";
+
+            }
+        </script>
+        <script src="https://atomui.netlify.app/"></script>
+        <script src="https://kit.fontawesome.com/f0348b8dc4.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
