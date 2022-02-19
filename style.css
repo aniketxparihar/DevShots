@@ -47,6 +47,19 @@ main{
     display: flex;
     flex-direction: column;
 }
+.landing__container{
+    height:40rem;
+    flex-direction: row;
+}
+.landing__text{
+    font-size: 4rem;
+    text-align: center;
+    width:60%;
+}
+.landing__image{
+    
+    width:40rem;
+}
 .quiz__card{
     max-width:25rem;
     height:max-content;
@@ -152,6 +165,14 @@ img{
 }
 
 @media screen and (max-width: 700px) {
+    .landing__container{
+        height:80rem;
+        flex-direction: column;
+    }
+    .landing__text{
+        font-size: 3rem;
+        width: 80%;
+    }
   .quiz__card__container{
    margin-left: 2rem;
 }
@@ -166,6 +187,7 @@ input{
     border-radius: 8px;
     margin-left:4px;
 }
+
 }
 @media screen and (max-width: 400px) {
   .quiz__card__container{
