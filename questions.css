@@ -57,6 +57,9 @@ button {
   border: 1px solid var(--gray-200);
   cursor: pointer;
 }
+#answer:hover{
+  background-color: var(--gray-200);
+}
 #answer:active,
 #answer:focus {
   animation-name: click;
