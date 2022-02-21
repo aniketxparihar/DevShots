@@ -1,0 +1,106 @@
+* {
+  font-family: "Noto Sans";
+  box-sizing: border-box;
+}
+body {
+  width: max-content;
+}
+html {
+  font-size: 10px;
+}
+
+main {
+  margin-top: 10rem;
+}
+button {
+  min-width: fit-content;
+}
+
+/* Nav Components */
+.nav__wrapper {
+  backdrop-filter: blur(10px);
+}
+
+.material-icons {
+  position: relative;
+  top: 5px;
+}
+.fa {
+  font-size: 2rem;
+}
+#score {
+  margin-left: auto;
+}
+
+#questionNoAndScore,
+#question,
+#answer,
+#prevAndNext {
+  margin-bottom: 4rem;
+  width: 60%;
+}
+@media screen and (max-width: 600px) {
+  #questionNoAndScore,
+#question,
+#answer,
+#prevAndNext {
+  margin-bottom: 4rem;
+  width: 90%;
+}
+}
+#question {
+  text-align: left;
+}
+#answer {
+  min-height: 7rem;
+  text-align: center;
+  border: 1px solid var(--gray-200);
+  cursor: pointer;
+}
+#answer:hover{
+  background-color: var(--gray-200);
+}
+#answer:active,
+#answer:focus {
+  animation-name: click;
+  animation-duration: 0.2s;
+}
+@keyframes click {
+  0% {
+    background-color: var(--gray-200);
+  }
+  50% {
+    background-color: var(--violet-200);
+  }
+  100% {
+    background-color: var(--gray-200);
+  }
+}
+#next {
+  margin-left: auto;
+}
+
+.modal {
+  width: fit-content;
+  height: fit-content;
+  border-radius: 8px;
+}
+
+.tracker {
+  height: 4rem;
+}
+
+#exit,
+#yes,
+#no {
+  padding: 1rem 4rem;
+}
+
+.true{
+  background-color: var(--success);
+  color:var(--main-black);
+}
+.false{
+  background-color: var(--danger);
+  color:var(--main-black);
+}

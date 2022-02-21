@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://atomui.netlify.app/css/component.css">
+    <link rel="stylesheet" href="questions.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Devshots | Questions</title>
+</head>
+
+<body class="flex  align-center width-full bg-main-white">
+
+    <div class="nav__wrapper ">
+        <div class="nav__left">
+            <div class="timer h5 p-4 txt-gray-800"><i class="material-icons txt-green-400">timer</i>: <span
+                    class="counter txt-gray-500">60 seconds</span></div>
+        </div>
+        <div class="nav__right flex align-center ">
+            <button onclick="modalOpen()" id="exit"
+                class="button  txt-2xl txt-bold bg-red-500 rounded-m m-4">Exit</button>
+        </div>
+    </div>
+    <main class="flex flex-col justify-center align-center width-full">
+        <div class="tracker width-full"></div>
+        <div class="h3 txt-gray-800 m-8">Topic 1</div>
+        <div id="questionNoAndScore" class="flex p-4 ">
+            <div class="h5 txt-yellow-400 ">Question <span class="current__question txt-gray-500 ">1/5</span></div>
+            <div id="score" class="h5 txt-violet-400">Score <span class="score txt-gray-500">0</span></div>
+        </div>
+        <div id="question" class="h5 txt-gray-600 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio
+            ab minus deleniti, voluptate nemo quae?</div>
+        <div id="answer" class="txt-3xl rounded-3xl  flex justify-center align-center  txt-gray-600">Lorem</div>
+        <div id="answer" class="txt-3xl rounded-3xl  flex justify-center align-center  txt-gray-600">Ipsum</div>
+        <div id="answer" class="txt-3xl rounded-3xl  flex justify-center align-center  txt-gray-600">Dolor</div>
+        <div id="prevAndNext" class="flex p-4 ">
+            <div id="prev" class=" txt-3xl txt-bold txt-light-blue-400 pointer rounded-m m-4">Prev</div>
+            <div id="next" class=" txt-3xl txt-bold txt-light-blue-400 pointer rounded-m m-4">Next</div>
+        </div>
+    </main>
+    <div class="modal__screen ">
+        <div class="modal__box flex justify-center align-center">
+            <div class="modal bg-main-black relative">
+
+                <div class="h6 m-4 txt-main-white">Do you want to leave the quiz in between?</div>
+                <div class="yesOrNo width-full flex justify-end">
+                    <button id="yes" class="button txt-2xl txt-bold  rounded-m m-4">Yes</button>
+                    <button onclick="modalClose()" id="no"
+                        class="button txt-2xl txt-bold bg-green-200 rounded-m m-4">No</button>
+
+                </div>
+            </div>
+        </div>
+        <script>
+            const modalScreen = document.querySelector(".modal__screen");
+            const modalOpen = () => {
+                console.log("Hi")
+                modalScreen.style.display = "block";
+
+            }
+
+            const modalClose = () => {
+                modalScreen.style.display = "none";
+
+            }
+        </script>
+        <script src="https://atomui.netlify.app/"></script>
+        <script src="https://kit.fontawesome.com/f0348b8dc4.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
