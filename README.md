@@ -1,13 +1,10 @@
-### [DevShots - Web Develoment Quizzes - Landing](https://devshots.netlify.app/home/)
-### [DevShots - Web Develoment Quizzes - Questions](https://devshots.netlify.app/questions/questions.html)
-### [DevShots - Web Develoment Quizzes - Results](https://devshots.netlify.app/results/results.html)
-### [DevShots - Web Develoment Quizzes - Rules](https://devshots.netlify.app/rules/rules.html)
+[DevShots - Web Develoment Quizzes ](https://devshots.netlify.app/)
 
 ## **Table of contents**
 
 - [Overview](#overview)
 
-  - [Documentation](#documentation)
+  - [Links](#links)
   - [Screenshots](#screenshots)
 
 - [Tech]()
@@ -18,18 +15,20 @@
 <br />
 
 ## **Overview**
-
 <br />
 
 DevShots is a Quiz App for latest trends in Web Development. Refresh your Dev knowledge and stay on top of your game!.
 
 <br />
 
-### **Documentation**
-
+### **Links**
+### [DevShots - Web Develoment Quizzes - Landing](https://devshots.netlify.app/)
+### [DevShots - Web Develoment Quizzes - Questions](https://devshots.netlify.app/questions/questions.html)
+### [DevShots - Web Develoment Quizzes - Results](https://devshots.netlify.app/results/results.html)
+### [DevShots - Web Develoment Quizzes - Rules](https://devshots.netlify.app/rules/rules.html)
 <br />
 
-#### Will be Uploading Quizzes Soon...
+#### Will be Uploading Quizzes and more screens Soon...
 
 ### **Screenshots**
 
@@ -64,12 +63,11 @@ gh repo clone aniketxparihar/Devshots
 ## **Contributing to the project**
 
 1. Do the steps (1-2) exactly as above.
-2. Refer the **shared.css** to get the idea what pattern is followed.
-3. Create a new branch from **dev** branch.
-4. Make the changes.
-5. Commit the Changes.
-6. Push the changes and open a pull request.
-7. Pull request will be reviewed by the maintainer and merged if found okay.
+2. Create a new branch from **dev** branch.
+3. Make the changes.
+4. Commit the Changes.
+5. Push the changes and open a pull request.
+6. Pull request will be reviewed by the maintainer and merged if found okay.
 
 **Note: Please describe the component/changes you have made in your pull request. It would be nice if you could attach a visual example for the same.**
 
@@ -93,3 +91,5 @@ gh repo clone aniketxparihar/Devshots
 
 <br />
 
+### If you have any suggestions for me please reach out on 
+[aniketxparihar @ twitter](https://twitter.com/aniketxparihar)
