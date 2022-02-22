@@ -36,8 +36,8 @@
         <div id="answer" class="txt-3xl rounded-3xl  flex justify-center align-center  txt-gray-600">Ipsum</div>
         <div id="answer" class="txt-3xl rounded-3xl  flex justify-center align-center  txt-gray-600">Dolor</div>
         <div id="prevAndNext" class="flex p-4 ">
-            <div id="prev" class=" txt-3xl txt-bold txt-light-blue-400 pointer rounded-m m-4">Prev</div>
-            <div id="next" class=" txt-3xl txt-bold txt-light-blue-400 pointer rounded-m m-4">Next</div>
+            <a href="#" id="prev" class=" txt-3xl txt-bold txt-light-blue-400 pointer rounded-m m-4">Prev</a>
+            <a href="../results/results.html" id="next" class=" txt-3xl txt-bold txt-light-blue-400 pointer rounded-m m-4">Next</a>
         </div>
     </main>
     <div class="modal__screen ">
@@ -48,25 +48,13 @@
                 <div class="yesOrNo width-full flex justify-end">
                     <button id="yes" class="button txt-2xl txt-bold  rounded-m m-4">Yes</button>
                     <button onclick="modalClose()" id="no"
-                        class="button txt-2xl txt-bold bg-green-200 rounded-m m-4">No</button>
+                        class="button txt-2xl txt-bold bg-light-blue-200 rounded-m m-4">No</button>
 
                 </div>
             </div>
         </div>
-        <script>
-            const modalScreen = document.querySelector(".modal__screen");
-            const modalOpen = () => {
-                console.log("Hi")
-                modalScreen.style.display = "block";
-
-            }
-
-            const modalClose = () => {
-                modalScreen.style.display = "none";
-
-            }
-        </script>
-        <script src="https://atomui.netlify.app/"></script>
+        
+        <script src="https://atomui.netlify.app/script.js"></script>
         <script src="https://kit.fontawesome.com/f0348b8dc4.js" crossorigin="anonymous"></script>
 
 </body>

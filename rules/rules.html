@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://atomui.netlify.app/css/component.css">
     <link rel="stylesheet" href="rules.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Document</title>
+    <title>Devshots | Rules</title>
 </head>
 
 <body class="flex  align-center width-full bg-main-white">
@@ -30,8 +30,8 @@
             <li>For every wrong answer you will lose 2 point</li>
             <li>If all the questions answered correctly you will earn a badge</li>
         </ol>
-        <button  id="start"
-                class="button  txt-2xl txt-bold bg-green-500 rounded-m m-4">Start</button>
+        <a href="../questions/questions.html"><button  id="start"
+                class="button  txt-2xl txt-bold bg-green-500 rounded-m m-4">Start</button></a>
         
     </main>
     <div class="modal__screen ">
@@ -47,17 +47,8 @@
                 </div>
             </div>
         </div>
-        <script>
-            const modalScreen = document.querySelector(".modal__screen");
-            const modalOpen = () => {
-                modalScreen.style.display = "block";
-            }
-
-            const modalClose = () => {
-                modalScreen.style.display = "none";
-            }
-        </script>
-        <script src="https://atomui.netlify.app/"></script>
+       
+        <script src="https://atomui.netlify.app/script.js"></script>
         <script src="https://kit.fontawesome.com/f0348b8dc4.js" crossorigin="anonymous"></script>
 
 </body>
